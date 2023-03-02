@@ -27,8 +27,14 @@
   </head>
   <body>
     <main>
-      <picture
-        ><img src="images/image-product-mobile.jpg" alt="perfume bottle"
+      <picture>
+        <source
+          media="(max-width:600px)"
+          srcset="images/image-product-mobile.jpg" />
+        <source
+          media="(min-width:600px)"
+          srcset="images/image-product-desktop.jpg" />
+        <img src="images/image-product-mobile.jpg" alt="perfume bottle"
       /></picture>
       <div class="container">
         <h1>PERFUME</h1>

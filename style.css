@@ -162,6 +162,11 @@ button {
   padding: 1.25rem;
 }
 
+button:hover {
+  background-color: hsl(228, 12%, 48%);
+  cursor: pointer;
+}
+
 @media screen and (min-width: 700px) {
   body {
     box-sizing: border-box;

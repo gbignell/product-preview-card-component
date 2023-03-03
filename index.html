@@ -11,7 +11,8 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css  " />
+
     <title>Frontend Mentor | Product preview card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,34 +28,38 @@
   </head>
   <body>
     <main>
-      <picture>
-        <source
-          media="(max-width:600px)"
-          srcset="images/image-product-mobile.jpg" />
-        <source
-          media="(min-width:600px)"
-          srcset="images/image-product-desktop.jpg" />
-        <img src="images/image-product-mobile.jpg" alt="perfume bottle"
-      /></picture>
+      <div>
+        <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="images/image-product-desktop.jpg"
+          />
+          <source
+            media="(max-width:500px)"
+            srcset="images/image-product-mobile.jpg"
+          />
+          <img
+            src="images/image-product-desktop.jpg"
+            alt="perfume image"
+            style="width: auto"
+          />
+        </picture>
+      </div>
       <div class="container">
         <h1>PERFUME</h1>
-        <div class="product-description">
-          <h2>Gabrielle Essence Eau De Parfum</h2>
-          <p>
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <div class="price">
-            <p>$149.99</p>
-            <p><del>$169.99</del></p>
-          </div>
-          <button>
-            <img src="images/icon-cart.svg" alt="shopping cart image" />
-            <p>Add to Cart</p>
-          </button>
+        <h2>Gabrielle Essence Eau De Parfum</h2>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+          <p class="green">$149.99</p>
+          <p><del>$169.99</del></p>
         </div>
+        <button><img src="images/icon-cart.svg" alt="" /> Add to Cart</button>
       </div>
     </main>
+
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

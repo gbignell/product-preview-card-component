@@ -155,6 +155,11 @@ button {
   gap: 1rem;
 }
 
+button:hover {
+  background-color: hsl(228, 12%, 48%);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 500px) {
   body {
     flex-direction: column;
